@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body{
     margin:0;
@@ -31,6 +31,8 @@ p{
     position: fixed;
     bottom: 20px;
     font-family: "Poppins", sans-serif;
+    color: white;
+    opacity: 50%;
 }
 
 .Home-Left-Cont{
@@ -126,11 +128,153 @@ p{
     color: white;
 }
 
+/* >>>============= RESPONSIVE HOME LEFT ===========<<< */
+
+@media (max-width:1630px) {
+
+    .Home-Left-Profile-Info-id{
+        font-size: 12pt;
+        padding: 5px 0px;
+    }
+    .Home-Left-Profile-Info-dept{
+        font-size: 10pt;
+        padding: 5px 0px;
+    }
+    .Home-Left-Profile-Info-clg{
+        font-size: 12pt;
+    }
+    .Home-Left-Profile-Info-Name-Cont{
+        padding: 0px 5px;
+    }
+    .Home-Left-Profile-Info-Name{
+        font-size: 12pt;
+    }
+    .Home-Left-Profile-Info-Pos{
+        font-size: 12pt;
+    }
+    .Home-Left-Profile-Buttons-Cont button{
+        width: 75%;
+        height: 45%;
+        border-radius: 5px;
+        font-size: 10pt;
+    }
+    .Home-Left-Profile-Version{
+        font-size: 10pt;
+        bottom: 10px;   
+    }
+    .Home-Left-Profile-Info-Cont{
+        padding: 8% 0px 12% 0;
+    }
+}
+
+@media (max-width:1235px) {
+    .Home-Left-Profile-Info-id{
+        font-size: 10pt;
+        padding: 5px 0px;
+    }
+    .Home-Left-Profile-Info-dept{
+        font-size: 8pt;
+        padding: 5px 0px;
+    }
+    .Home-Left-Profile-Info-clg{
+        font-size: 10pt;
+    }
+    .Home-Left-Profile-Info-Name-Cont{
+        padding: 0px 5px;
+    }
+    .Home-Left-Profile-Info-Name{
+        font-size: 10pt;
+    }
+    .Home-Left-Profile-Info-Pos{
+        font-size: 10pt;
+    }
+    .Home-Left-Profile-Buttons-Cont button{
+        width: 75%;
+        height: 45%;
+        border-radius: 5px;
+        font-size: 7pt;
+    }
+    .Home-Left-Profile-Version{
+        font-size: 7pt;
+        bottom: 8px;   
+    }
+    .Home-Left-Profile-Info-Cont{
+        padding: 8% 0px 12% 0;
+    }
+}
+
+@media (max-width:988px) {
+    .Home-Left-Profile-Info-id{
+        font-size: 8pt;
+        padding: 5px 0px;
+    }
+    .Home-Left-Profile-Info-dept{
+        font-size: 6pt;
+        padding: 5px 0px;
+    }
+    .Home-Left-Profile-Info-clg{
+        font-size: 8pt;
+    }
+    .Home-Left-Profile-Info-Name-Cont{
+        padding: 0px 5px;
+    }
+    .Home-Left-Profile-Info-Name{
+        font-size: 8pt;
+    }
+    .Home-Left-Profile-Info-Pos{
+        font-size: 8pt;
+    }
+    .Home-Left-Profile-Buttons-Cont button{
+        width: 75%;
+        height: 45%;
+        border-radius: 5px;
+        font-size: 5pt;
+    }
+    .Home-Left-Profile-Version{
+        font-size: 5pt;
+        bottom: 5px;   
+    }
+    .Home-Left-Profile-Info-Cont{
+        padding: 15px 0px 25px 0;
+    }
+}
+
+
 
 /* <<<============= HOME RIGHT ===============>>> */
 
 .Home-Right{
     background-color: green;
-    width: 70%;
+    width: 75%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Home-Right-Cont{
+    width: 100%;
+    height: 80%;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-direction: column;
+}
+.Home-Right-Title-Cont{
+    border-left: 8px solid #08AD8C;
+    padding-left: 20px;
+}
+.Home-Right-Title-Welcome{
+    padding-bottom: 10px;
+    font-size: 25pt;
+    font-family: "Amaranth", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.Home-Right-Title-App{
+    font-size: 30pt;
+    color: #08AD8C;
+    font-family: "Amaranth", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
