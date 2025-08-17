@@ -16,24 +16,24 @@ function createWindow() {
   win.setAspectRatio(16 / 9);
 
 
-  win.loadFile('index.html');
+  win.loadURL('http://localhost:5173/');
 }
 
 app.whenReady().then(createWindow);
 
-ipcMain.on('goToHome', () => {
-  win.loadFile('./Pages/Home.html');
-});
+// ipcMain.on('goToHome', () => {
+//   win.loadFile('./Pages/Home.html');
+// });
 
-ipcMain.on('goBack', () => {
-  win.loadFile('index.html');
-});
+// ipcMain.on('goBack', () => {
+//   win.loadFile('index.html');
+// });
 
-app.on('window-all-closed', () => {
-  if (process.platform !== 'darwin') app.quit();
-});
+// app.on('window-all-closed', () => {
+//   if (process.platform !== 'darwin') app.quit();
+// });
 
-app.on('activate', () => {
-  if (BrowserWindow.getAllWindows().length === 0) createWindow();
-});
+// app.on('activate', () => {
+//   if (BrowserWindow.getAllWindows().length === 0) createWindow();
+// });
 
