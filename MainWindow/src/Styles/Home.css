@@ -248,8 +248,9 @@ p{
 /* <<<============= HOME RIGHT ===============>>> */
 
 .Home-Right{
-    background-color: green;
-    width: 75%;
+    background-color: white;
+    width: 72%;
+    padding: 0 4%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -282,4 +283,42 @@ p{
     font-family: "Amaranth", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+.Home-Right-Card-Cont{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Home-Right-Card{
+    background-color: #08AD8C;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.Home-Right-Card p{
+    padding: 4px 40px;
+    text-wrap: wrap;
+    color: white;
+    text-align: center;
+    font-family: "Amaranth", sans-serif;
+}
+.Home-Right-Status-Indi{
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    border-radius: 360px;
+}
+.Home-Right-Status-Cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Home-Right-Status{
+    padding: 4px 0px 4px 10px !important;
 }

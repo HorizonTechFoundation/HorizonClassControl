@@ -50,15 +50,47 @@ function App() {
               <p className="Home-Right-Title-App">Horizon ClassName Control !</p>
             </div>
 
-            <div>
-              <div>
-                <div>
-                  
+            <div className='Home-Right-Card-Cont'>
+
+              <div className='Home-Right-Card'>
+                <div className='Home-Right-Status-Cont'>
+                  <div className='Home-Right-Status-Indi'></div>
+                  <p className='Home-Right-Status'>Not Started</p>
                 </div>
+                <p>Environmental And Social Impact Assessment</p>
+                <p>Chocka D Lingam</p>
+                <p>10:30 AM - 11:20 AM At B2L03</p>
               </div>
+
+              <div className='Home-Right-Card'>
+                <div className='Home-Right-Status-Cont'>
+                  <div className='Home-Right-Status-Indi'></div>
+                  <p className='Home-Right-Status'>Not Started</p>
+                </div>
+                <p>Environmental And Social Impact Assessment</p>
+                <p>Chocka D Lingam</p>
+                <p>10:30 AM - 11:20 AM At B2L03</p>
+              </div>
+
+              <div className='Home-Right-Card'>
+                <div className='Home-Right-Status-Cont'>
+                  <div className='Home-Right-Status-Indi'></div>
+                  <p className='Home-Right-Status'>Not Started</p>
+                </div>
+                <p>Environmental And Social Impact Assessment</p>
+                <p>Chocka D Lingam</p>
+                <p>10:30 AM - 11:20 AM At B2L03</p>
+              </div>
+
             </div>
 
+            <p>
+              Horizon Classroom is a mobile-first solution designed to minimize distractions during class or test hours. By enforcing in-app presence, the app automatically tracks student attention. If a student closes or minimizes the app, they are instantly marked as absent—encouraging full participation and minimizing mobile misuse.
+            </p>
+
           </div>
+
+          
 
           
 
