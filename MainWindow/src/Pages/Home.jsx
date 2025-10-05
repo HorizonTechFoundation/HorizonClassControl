@@ -1,103 +1,85 @@
-import { useState } from 'react'
 import '../Styles/Home.css'
-import ProfileImg from '../assets/Profiles/profile1.png'
+import logo from '../assets/logo.png'
 
-function App() {
-  const [count, setCount] = useState(0)
+function Home() {
 
   return (
     <>
-      <section className="Home">
-        <div className="Home-Left">
+    {/* ===== HOME ===== */}
+    <section className='home'>
 
-          <div className="Home-Left-Cont">
+      {/* ===== HOME LEFT ===== */}
+      <div className='home-left'>
 
-            {/* ====== PROFILE IMAGE ====== */}
+         {/* ===== HOME LEFT CONTENT ===== */}
+        <div className='home-left-cont'>
 
-            <div className="Home-Left-Profile-Image-Cont">
-              <img src={ProfileImg}/>
+          {/* ===== HOME LEFT TOP ===== */}
+          <div className='home-left-top'>
+
+            {/* ===== HOME LEFT TOP LOGO ===== */}
+            <div className='home-left-top-logo'>
+              <img src={logo} alt='HORIZON CLASS CONTROL'/>
             </div>
-
-            {/* ======= PROFILE CONT ======== */}
-
-            <div className="Home-Left-Profile-Info-Cont">
-              <p className="Home-Left-Profile-Info-id">RIT-EVD</p>
-              <div className="Home-Left-Profile-Info-Name-Cont">
-                <p className="Home-Left-Profile-Info-Name">Erana Veerapa Dinesh</p>
-                <p className="Home-Left-Profile-Info-Pos">Assistant Professor</p>
-              </div>
-              <p className="Home-Left-Profile-Info-dept">Department Of Computer Science and Business Systems</p>
-              <p className="Home-Left-Profile-Info-clg">RITRJPM</p>
-            </div>
-
-            {/* ========= PROFILE BUTTONS ========== */}
-
-            <div className="Home-Left-Profile-Buttons-Cont">
-              <button className="Home-Left-Profile-Button-Contact">Contact</button>
-              <button className="Home-Left-Profile-Button-Logout">Logout</button>
-            </div>
-
-          </div>
-          <p className="Home-Left-Profile-Version">Version 0.1 (beta)</p>
-
-        </div>
-        <div className="Home-Right">
-
-          <div className="Home-Right-Cont">
-
-            <div className="Home-Right-Title-Cont">
-              <p className="Home-Right-Title-Welcome">Welcome To</p>
-              <p className="Home-Right-Title-App">Horizon ClassName Control !</p>
-            </div>
-
-            <div className='Home-Right-Card-Cont'>
-
-              <div className='Home-Right-Card'>
-                <div className='Home-Right-Status-Cont'>
-                  <div className='Home-Right-Status-Indi'></div>
-                  <p className='Home-Right-Status'>Not Started</p>
-                </div>
-                <p>Environmental And Social Impact Assessment</p>
-                <p>Chocka D Lingam</p>
-                <p>10:30 AM - 11:20 AM At B2L03</p>
-              </div>
-
-              <div className='Home-Right-Card'>
-                <div className='Home-Right-Status-Cont'>
-                  <div className='Home-Right-Status-Indi'></div>
-                  <p className='Home-Right-Status'>Not Started</p>
-                </div>
-                <p>Environmental And Social Impact Assessment</p>
-                <p>Chocka D Lingam</p>
-                <p>10:30 AM - 11:20 AM At B2L03</p>
-              </div>
-
-              <div className='Home-Right-Card'>
-                <div className='Home-Right-Status-Cont'>
-                  <div className='Home-Right-Status-Indi'></div>
-                  <p className='Home-Right-Status'>Not Started</p>
-                </div>
-                <p>Environmental And Social Impact Assessment</p>
-                <p>Chocka D Lingam</p>
-                <p>10:30 AM - 11:20 AM At B2L03</p>
-              </div>
-
-            </div>
-
-            <p>
-              Horizon Classroom is a mobile-first solution designed to minimize distractions during class or test hours. By enforcing in-app presence, the app automatically tracks student attention. If a student closes or minimizes the app, they are instantly marked as absent—encouraging full participation and minimizing mobile misuse.
-            </p>
+            
 
           </div>
 
-          
+          {/* ===== HOME LEFT BOTTOM ===== */}
+          <div className='home-left-bottom'>
 
-          
+            {/* ===== HOME LEFT BOTTOM MENU ===== */}
+            <div className='home-left-bottom-menu'>
+
+              {/* ===== HOME LEFT BOTTOM MENU HOME ===== */}
+              <a className='home-left-bottom-menu-home'>
+                <p>Home</p>
+              </a>
+
+              {/* ===== HOME LEFT BOTTOM MENU OTHER ===== */}
+              <div className='home-left-bottom-menu-other'>
+
+                {/* ===== HOME LEFT BOTTOM MENU CREATE ===== */}
+                <a className='home-left-bottom-menu-create'>
+                  <p>Create Class</p>
+                </a>
+
+                {/* ===== HOME LEFT BOTTOM MENU MANAGE ===== */}
+                <a className='home-left-bottom-menu-manage'>
+                  <p>Manage</p>
+                </a>
+
+                {/* ===== HOME LEFT BOTTOM MENU PROFILE ===== */}
+                <a className='home-left-bottom-menu-profile'>
+                  <p>Profile</p>
+                </a>
+
+                {/* ===== HOME LEFT BOTTOM MENU CONTACT ===== */}
+                <a className='home-left-bottom-menu-contact'>
+                  <p>Contact</p>
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
 
         </div>
-      </section>
+
+        {/* ===== HOME LEFT VERSION ===== */}
+        <p className='home-left-version'>Version 0.1</p>
+
+      </div>
+
+      {/* ===== HOME RIGHT ===== */}
+      <div className='home-right'>
+
+      </div>
+
+    </section>
     </>
   )
 }
 
-export default App
+export default Home

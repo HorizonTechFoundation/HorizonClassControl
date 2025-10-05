@@ -1,324 +1,107 @@
-@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-body{
-    margin:0;
-}
-p{
-    margin: 0;
-}
-
 #root{
     width: 100%;
-}
-
-.Home{
-    width: 100%;
     height: 100vh;
+}
+
+/* ===== 1. HOME ===== */
+
+.home{
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
-/* <<<=========== HOME LEFT =============>>> */
+/* ===== 2. HOME LEFT ===== */
 
-.Home-Left{
+.home-left{
     background-color: #08AD8C;
-    width: 22%;
+    width: 27%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.Home-Left-Profile-Version{
-    position: fixed;
-    bottom: 20px;
-    font-family: "Poppins", sans-serif;
-    color: white;
-    opacity: 50%;
-}
-
-.Home-Left-Cont{
-    width: 100%;
-    height: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.Home-Left-Profile-Image-Cont{
-    height: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.Home-Left-Profile-Image-Cont img{
-    height: 100%;
-    border-radius: 100%;
-}
-
-.Home-Left-Profile-Info-Cont{
-    width: 75%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 10% 0px 20% 0;
-}
-.Home-Left-Profile-Info-id{
-    color: white;
-    font-size: 15pt;
-    font-weight: bold;
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-    padding: 15px 0px;
-}
-.Home-Left-Profile-Info-dept{
-    color: white;
-    font-size: 13pt;
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-    padding: 15px 0px;
-}
-.Home-Left-Profile-Info-clg{
-    color: white;
-    font-size: 15pt;
-    font-weight: bold;
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-}
-.Home-Left-Profile-Info-Name-Cont{
-    padding: 0px 15px;
-}
-.Home-Left-Profile-Info-Name{
-    color: white;
-    font-size: 15pt;
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-}
-.Home-Left-Profile-Info-Pos{
-    color: white;
-    font-size: 15pt;
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-    opacity: 50%;
-}
-.Home-Left-Profile-Buttons-Cont{
-    width: 100%;
-    height: 20%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
 }
-.Home-Left-Profile-Buttons-Cont button{
-    width: 75%;
-    height: 45%;
-    border-radius: 10px;
-    border: none;
-    font-family: "Poppins", sans-serif;
-    font-size: 12pt;
-    font-weight: bold;
-}
-.Home-Left-Profile-Button-Contact{
-    background-color: white;
-    color: #08AD8C;
-}
-.Home-Left-Profile-Button-Logout{
-    background-color: red;
-    color: white;
+.home-left-cont{
+    width: 76%;
+    height: 82%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
 }
 
-/* >>>============= RESPONSIVE HOME LEFT ===========<<< */
+/* ===== 3. HOME LEFT TOP ===== */ 
 
-@media (max-width:1630px) {
-
-    .Home-Left-Profile-Info-id{
-        font-size: 12pt;
-        padding: 5px 0px;
-    }
-    .Home-Left-Profile-Info-dept{
-        font-size: 10pt;
-        padding: 5px 0px;
-    }
-    .Home-Left-Profile-Info-clg{
-        font-size: 12pt;
-    }
-    .Home-Left-Profile-Info-Name-Cont{
-        padding: 0px 5px;
-    }
-    .Home-Left-Profile-Info-Name{
-        font-size: 12pt;
-    }
-    .Home-Left-Profile-Info-Pos{
-        font-size: 12pt;
-    }
-    .Home-Left-Profile-Buttons-Cont button{
-        width: 75%;
-        height: 45%;
-        border-radius: 5px;
-        font-size: 10pt;
-    }
-    .Home-Left-Profile-Version{
-        font-size: 10pt;
-        bottom: 10px;   
-    }
-    .Home-Left-Profile-Info-Cont{
-        padding: 8% 0px 12% 0;
-    }
-}
-
-@media (max-width:1235px) {
-    .Home-Left-Profile-Info-id{
-        font-size: 10pt;
-        padding: 5px 0px;
-    }
-    .Home-Left-Profile-Info-dept{
-        font-size: 8pt;
-        padding: 5px 0px;
-    }
-    .Home-Left-Profile-Info-clg{
-        font-size: 10pt;
-    }
-    .Home-Left-Profile-Info-Name-Cont{
-        padding: 0px 5px;
-    }
-    .Home-Left-Profile-Info-Name{
-        font-size: 10pt;
-    }
-    .Home-Left-Profile-Info-Pos{
-        font-size: 10pt;
-    }
-    .Home-Left-Profile-Buttons-Cont button{
-        width: 75%;
-        height: 45%;
-        border-radius: 5px;
-        font-size: 7pt;
-    }
-    .Home-Left-Profile-Version{
-        font-size: 7pt;
-        bottom: 8px;   
-    }
-    .Home-Left-Profile-Info-Cont{
-        padding: 8% 0px 12% 0;
-    }
-}
-
-@media (max-width:988px) {
-    .Home-Left-Profile-Info-id{
-        font-size: 8pt;
-        padding: 5px 0px;
-    }
-    .Home-Left-Profile-Info-dept{
-        font-size: 6pt;
-        padding: 5px 0px;
-    }
-    .Home-Left-Profile-Info-clg{
-        font-size: 8pt;
-    }
-    .Home-Left-Profile-Info-Name-Cont{
-        padding: 0px 5px;
-    }
-    .Home-Left-Profile-Info-Name{
-        font-size: 8pt;
-    }
-    .Home-Left-Profile-Info-Pos{
-        font-size: 8pt;
-    }
-    .Home-Left-Profile-Buttons-Cont button{
-        width: 75%;
-        height: 45%;
-        border-radius: 5px;
-        font-size: 5pt;
-    }
-    .Home-Left-Profile-Version{
-        font-size: 5pt;
-        bottom: 5px;   
-    }
-    .Home-Left-Profile-Info-Cont{
-        padding: 15px 0px 25px 0;
-    }
-}
-
-
-
-/* <<<============= HOME RIGHT ===============>>> */
-
-.Home-Right{
-    background-color: white;
-    width: 72%;
-    padding: 0 4%;
-    height: 100%;
+.home-left-top{
+    width: 100%;
+    height: 41%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.Home-Right-Cont{
+.home-left-top-logo{
+    width: 75%;
+}
+.home-left-top-logo img{
     width: 100%;
-    height: 80%;
-    background-color: white;
+}
+
+/* ===== 4. HOME LEFT BOTTOM ===== */
+
+.home-left-bottom{
+    width: 100%;
+    height: 58%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+}
+.home-left-bottom-menu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.home-left-bottom-menu-home{
+    background-color: white;
+    width: 100%;
+    height: 18%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 14px;
+    cursor: pointer;
+}
+.home-left-bottom-menu-home p{
+    color: #08AD8C;
+    padding-left: 40px;
+    font-size: 16pt;
+}
+.home-left-bottom-menu-other{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
     align-items: start;
     flex-direction: column;
 }
-.Home-Right-Title-Cont{
-    border-left: 8px solid #08AD8C;
-    padding-left: 20px;
-}
-.Home-Right-Title-Welcome{
-    padding-bottom: 10px;
-    font-size: 25pt;
-    font-family: "Amaranth", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: black;
-}
-.Home-Right-Title-App{
-    font-size: 30pt;
-    color: #08AD8C;
-    font-family: "Amaranth", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-.Home-Right-Card-Cont{
-    width: 100%;
-    height: 30%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.Home-Right-Card{
+.home-left-bottom-menu-create, .home-left-bottom-menu-manage, .home-left-bottom-menu-profile, .home-left-bottom-menu-contact{
     background-color: #08AD8C;
-    width: 30%;
-    height: 100%;
+    width: 100%;
+    height: 25%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 14px;
+    cursor: pointer;
 }
-.Home-Right-Card p{
-    padding: 4px 40px;
-    text-wrap: wrap;
+.home-left-bottom-menu-create p, .home-left-bottom-menu-manage p, .home-left-bottom-menu-profile p, .home-left-bottom-menu-contact p{
     color: white;
-    text-align: center;
-    font-family: "Amaranth", sans-serif;
-}
-.Home-Right-Status-Indi{
-    background-color: red;
-    width: 10px;
-    height: 10px;
-    border-radius: 360px;
-}
-.Home-Right-Status-Cont{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.Home-Right-Status{
-    padding: 4px 0px 4px 10px !important;
+    padding-left: 40px;
+    font-size: 16pt;
 }
