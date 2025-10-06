@@ -18,7 +18,7 @@ function Home() {
       "start":"11:00 AM",
       "end":"12:00 AM",
       "venue":"Venue 2",
-      "status":"Not Started"
+      "status":"Pending"
     },
     {
       "name":"Class 3",
@@ -26,7 +26,7 @@ function Home() {
       "start":"11:00 AM",
       "end":"12:00 AM",
       "venue":"Venue 3",
-      "status":"Not Started"
+      "status":"Completed"
     }
   ]
 
@@ -73,7 +73,7 @@ function Home() {
 
                 {/* ===== HOME LEFT BOTTOM MENU MANAGE ===== */}
                 <a className='home-left-bottom-menu-manage'>
-                  <p>Manage</p>
+                  <p>Manage Class</p>
                 </a>
 
                 {/* ===== HOME LEFT BOTTOM MENU PROFILE ===== */}
