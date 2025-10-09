@@ -1,25 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Average+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-.createclass-back-cont{
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    width: 8%;
-    height: 15%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.createclass-back{
-    width: 30px;
-    height: 30px;
-}
-.createclass-back svg{
-    width: 100%;
-    height: 100%;
-}
-
-.createclass-cont{
+.editclass-cont{
     background-color: red;
     width: 100%;
     height: 100%;
@@ -28,7 +9,7 @@
     align-items: center;
     flex-direction: column;
 }
-.createclass-top{
+.editclass-top{
     width: 100%;
     height: 15%;
     display: flex;
@@ -36,7 +17,7 @@
     align-items: center;
     background-color: #08AD8C;
 }
-.createclass-top p{
+.editclass-top p{
     font-size: 20pt;
     border-left: 5px solid white;
     color: white;
@@ -47,7 +28,7 @@
 
 /* ========================= */
 
-.createclass-main{
+.editclass-main{
     background-color: white;
     width: 100%;
     height: 85%;
@@ -55,14 +36,14 @@
     justify-content: center;
     align-items: center;
 }
-.createclass-main-cont{
+.editclass-main-cont{
     width: 86%;
     height: 75%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.createclass-main-left{
+.editclass-main-left{
     height: 100%;
     width: 68%;
     display: flex;
@@ -70,7 +51,7 @@
     align-items: center;
     flex-direction: column;
 }
-.createclass-main-left-top{
+.editclass-main-left-top{
     width: 100%;
     height: 34%;
     display: grid;
@@ -79,14 +60,14 @@
     row-gap: 11%;
     column-gap:2.6%;
 }
-.createclass-main-left-top-input{
+.editclass-main-left-top-input{
     background-color: #08AD8C;
     display: flex;
     justify-content: end;
     align-items: center;
     border-radius: 10px;
 }
-.createclass-main-left-top-input input{
+.editclass-main-left-top-input input{
     background-color: #f0f0f0;
     color: black;
     border: none;
@@ -98,21 +79,21 @@
     padding-right: 2%;
     font-family: "Amaranth", sans-serif;
 }
-.createclass-main-left-top-input input:focus{
+.editclass-main-left-top-input input:focus{
     border: none;
     outline: none;
 }
 input[type="time"]::-webkit-calendar-picker-indicator , input[type="date"]::-webkit-calendar-picker-indicator {
   filter: invert(1);
 }
-.createclass-main-left-top-input p{
+.editclass-main-left-top-input p{
     color: white;
     font-family: "Amaranth", sans-serif;
     width: 23%;
     padding: 0 2%;
 }
 
-.createclass-main-left-bottom{
+.editclass-main-left-bottom{
     background-color: white;
     width: calc(100% - 20px);
     height: calc(61% - 20px);
@@ -122,7 +103,7 @@ input[type="time"]::-webkit-calendar-picker-indicator , input[type="date"]::-web
     align-items: center;
     border: 10px solid #08AD8C;
 }
-.createclass-main-left-bottom-cont{
+.editclass-main-left-bottom-cont{
     width: 93%;
     height: 86%;
     display: flex;
@@ -130,7 +111,7 @@ input[type="time"]::-webkit-calendar-picker-indicator , input[type="date"]::-web
     align-items: center;
     flex-direction: column;
 }
-.createclass-main-left-bottom-row1{
+.editclass-main-left-bottom-row1{
     background-color: white;
     width: 100%;
     height: 15%;
@@ -138,7 +119,7 @@ input[type="time"]::-webkit-calendar-picker-indicator , input[type="date"]::-web
     justify-content: space-between;
     align-items: center;
 }
-.createclass-main-left-bottom-row1 div button{
+.editclass-main-left-bottom-row1 div button{
     background-color: transparent;
     border: none;
     outline: none;
@@ -148,25 +129,25 @@ input[type="time"]::-webkit-calendar-picker-indicator , input[type="date"]::-web
     font-size: 10pt;
     
 }
-.createclass-main-left-bottom-row1 p{
+.editclass-main-left-bottom-row1 p{
     color: black;
     font-family: "Amaranth", sans-serif;
 }
-.createclass-main-left-bottom-row1 p span{
+.editclass-main-left-bottom-row1 p span{
     color: #08AD8C;
     font-size: 20pt;
     padding-right: 5px;
 }
 
 
-.createclass-main-left-bottom-row2{
+.editclass-main-left-bottom-row2{
     width: 100%;
     height: 15%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.createclass-main-left-bottom-row2 input{
+.editclass-main-left-bottom-row2 input{
     width: calc(31% - 30px);
     height: 100%;
     padding: 0 15px;
@@ -178,7 +159,7 @@ input[type="time"]::-webkit-calendar-picker-indicator , input[type="date"]::-web
 }
 
 
-.createclass-main-left-bottom-row3{
+.editclass-main-left-bottom-row3{
     background-color: red;
     width: 100%;
     height: 60%;
@@ -189,7 +170,7 @@ input[type="time"]::-webkit-calendar-picker-indicator , input[type="date"]::-web
 /* =================== */
 
 
-.createclass-main-right{
+.editclass-main-right{
     background-color: white;
     width: calc(30% - 20px);
     height: calc(100% - 20px);
@@ -200,13 +181,13 @@ input[type="time"]::-webkit-calendar-picker-indicator , input[type="date"]::-web
     align-items: center;
     flex-direction: column;
 }
-.createclass-main-right-img{
+.editclass-main-right-img{
     width: 56%;
 }
-.createclass-main-right-img img{
+.editclass-main-right-img img{
     width: 100%;
 }
-.createclass-main-right-cont{
+.editclass-main-right-cont{
     width: 80%;
     height: 20%;
     display: flex;
@@ -214,21 +195,21 @@ input[type="time"]::-webkit-calendar-picker-indicator , input[type="date"]::-web
     align-items: center;
     flex-direction: column;
 }
-.createclass-main-right-cont p{
+.editclass-main-right-cont p{
     text-align: center;
     font-family: "Amaranth", sans-serif;
 }
-.createclass-main-right-cont-l1{
+.editclass-main-right-cont-l1{
     color: #08AD8C;
 }
-.createclass-main-right-cont-l2{
+.editclass-main-right-cont-l2{
     opacity: 75%;
 }
-.createclass-main-right-cont-l3{
+.editclass-main-right-cont-l3{
     opacity: 50%;
 }
 
-.createclass-main-right button{
+.editclass-main-right button{
     background-color: #08AD8C;
     border: none;
     outline: none;

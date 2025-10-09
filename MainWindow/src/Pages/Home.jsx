@@ -1,7 +1,10 @@
 import '../Styles/Home.css'
 import logo from '../assets/logo.png'
+import { useNavigate } from 'react-router-dom'
 
 function Home() {
+
+  const navigate = useNavigate(); 
 
   let classes=[
     {
@@ -67,12 +70,12 @@ function Home() {
               <div className='home-left-bottom-menu-other'>
 
                 {/* ===== HOME LEFT BOTTOM MENU CREATE ===== */}
-                <a className='home-left-bottom-menu-create'>
+                <a className='home-left-bottom-menu-create' onClick={() => navigate('/createclass')}>
                   <p>Create Class</p>
                 </a>
 
                 {/* ===== HOME LEFT BOTTOM MENU MANAGE ===== */}
-                <a className='home-left-bottom-menu-manage'>
+                <a className='home-left-bottom-menu-manage' onClick={() => navigate('/manageclass')}>
                   <p>Manage Class</p>
                 </a>
 
@@ -120,7 +123,7 @@ function Home() {
         <div className='home-right-card-cont'>
           
           {/* ===== HOME RIGHT CARD ===== */}
-          <div className='home-right-card'>
+          <a className='home-right-card' onClick={() => navigate('/classroom')}>
             <div className='home-right-card-status'>
               <div></div>
               <p>{classes[0]['status']}</p>
@@ -128,10 +131,10 @@ function Home() {
             <p className='home-right-card-name'>{classes[0]['name']}</p>
             <p className='home-right-card-faculty'>{classes[0]['faculty']}</p>
             <p className='home-right-card-time'>{classes[0]['start']} - {classes[0]['end']} at {classes[0]['venue']}</p>
-          </div>
+          </a>
 
           {/* ===== HOME RIGHT CARD ===== */}
-          <div className='home-right-card'>
+          <a className='home-right-card'>
             <div className='home-right-card-status'>
               <div></div>
               <p>{classes[1]['status']}</p>
@@ -139,10 +142,10 @@ function Home() {
             <p className='home-right-card-name'>{classes[1]['name']}</p>
             <p className='home-right-card-faculty'>{classes[1]['faculty']}</p>
             <p className='home-right-card-time'>{classes[1]['start']} - {classes[1]['end']} at {classes[1]['venue']}</p>
-          </div>
+          </a>
 
           {/* ===== HOME RIGHT CARD ===== */}
-          <div className='home-right-card'>
+          <a className='home-right-card'>
             <div className='home-right-card-status'>
               <div></div>
               <p>{classes[2]['status']}</p>
@@ -150,7 +153,7 @@ function Home() {
             <p className='home-right-card-name'>{classes[2]['name']}</p>
             <p className='home-right-card-faculty'>{classes[2]['faculty']}</p>
             <p className='home-right-card-time'>{classes[2]['start']} - {classes[2]['end']} at {classes[2]['venue']}</p>
-          </div>
+          </a>
 
         </div>
 
@@ -164,8 +167,8 @@ function Home() {
         {/* ===== HOME RIGHT BUTTON CONT ===== */}
         <div className='home-right-button-cont'>
 
-          <button className='home-right-button'>Create Class</button>
-          <button className='home-right-button'>Manage Class</button>
+          <button className='home-right-button' onClick={() => navigate('/createclass')}>Create Class</button>
+          <button className='home-right-button' onClick={() => navigate('/manageclass')}>Manage Class</button>
 
         </div>
 

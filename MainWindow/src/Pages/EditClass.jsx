@@ -1,9 +1,10 @@
-import '../Styles/CreateClass.css'
+import '../Styles/EditClass.css'
 import React, { useEffect, useState } from 'react';
-import CreateClassImg from "../assets/CreateClassImg.png"
+import EditClassImg from "../assets/EditClassImg.png"
 import { useNavigate } from 'react-router-dom'
 
-function CreateClass(){
+
+function EditClass(){
     const [today, setToday] = useState('');
     const navigate = useNavigate(); 
 
@@ -11,10 +12,9 @@ function CreateClass(){
         const currentDate = new Date().toISOString().split('T')[0];
         setToday(currentDate);
     }, []);
-
-
     return(
         <>
+
         <div className='createclass-back-cont'>
             <a className='createclass-back' onClick={() => navigate('/')}>
                 <svg
@@ -39,68 +39,67 @@ function CreateClass(){
 
             </a>
         </div>
-        
 
-        <section className='createclass-cont'>
-            <div className='createclass-top'>
-                <p>Create New Class</p>
+        <section className='editclass-cont'>
+            <div className='editclass-top'>
+                <p>Edit Class</p>
             </div>
 
-            <div className='createclass-main'>
-                <div className='createclass-main-cont'>
-                    <div className='createclass-main-left'>
+            <div className='editclass-main'>
+                <div className='editclass-main-cont'>
+                    <div className='editclass-main-left'>
 
-                        <div className='createclass-main-left-top'>
+                        <div className='editclass-main-left-top'>
 
-                            <div className='createclass-main-left-top-input'>
+                            <div className='editclass-main-left-top-input'>
                                 <p>Class Name</p>
                                 <input placeholder='Class Name'/>
                             </div>
 
-                            <div className='createclass-main-left-top-input'>
+                            <div className='editclass-main-left-top-input'>
                                 <p>Date</p>
                                 <input placeholder='Date' type='date' value={today} onChange={(e) => setToday(e.target.value)}/>
                             </div>
 
-                            <div className='createclass-main-left-top-input'>
+                            <div className='editclass-main-left-top-input'>
                                 <p>Start Time</p>
                                 <input placeholder='Class Starting Time' type='time'/>
                             </div>
 
-                            <div className='createclass-main-left-top-input'>
+                            <div className='editclass-main-left-top-input'>
                                 <p>End Time</p>
                                 <input placeholder='Class Ending Time' type='time'/>
                             </div>
 
-                            <div className='createclass-main-left-top-input'>
+                            <div className='editclass-main-left-top-input'>
                                 <p>Venue</p>
                                 <input placeholder='Venue of Class'/>
                             </div>
 
-                            <div className='createclass-main-left-top-input'>
+                            <div className='editclass-main-left-top-input'>
                                 <p>Department</p>
                                 <input placeholder='Department'/>
                             </div>
 
                         </div>
-                        <div className='createclass-main-left-bottom'>
+                        <div className='editclass-main-left-bottom'>
 
-                            <div className='createclass-main-left-bottom-cont'>
-                                <div className='createclass-main-left-bottom-row1'>
+                            <div className='editclass-main-left-bottom-cont'>
+                                <div className='editclass-main-left-bottom-row1'>
                                     <p><span>{27}</span> Students Selected</p>
                                     <div>
                                         <button>Save Preset</button>
                                         <button>Use Preset</button>
                                     </div>
                                 </div>
-                                <div className='createclass-main-left-bottom-row2'>
+                                <div className='editclass-main-left-bottom-row2'>
 
                                     <input placeholder='Name'/>
                                     <input placeholder='Reg No'/>
                                     <input placeholder='Department'/>
 
                                 </div>
-                                <div className='createclass-main-left-bottom-row3'>
+                                <div className='editclass-main-left-bottom-row3'>
 
                                     {/* ================================== */}
 
@@ -110,18 +109,18 @@ function CreateClass(){
                         </div>
 
                     </div>
-                    <div className='createclass-main-right'>
+                    <div className='editclass-main-right'>
 
-                        <div className='createclass-main-right-img'>
-                            <img src={CreateClassImg}/>
+                        <div className='editclass-main-right-img'>
+                            <img src={EditClassImg}/>
                         </div>
-                        <div className='createclass-main-right-cont'>
-                            <p className='createclass-main-right-cont-l1'>Environmental And Social Impact Assessment</p>
-                            <p className='createclass-main-right-cont-l2'>Erana Veerapa Dinesh</p>
-                            <p className='createclass-main-right-cont-l3'>10:30 AM - 11:20 AM At B2L03</p>
+                        <div className='editclass-main-right-cont'>
+                            <p className='editclass-main-right-cont-l1'>Environmental And Social Impact Assessment</p>
+                            <p className='editclass-main-right-cont-l2'>Erana Veerapa Dinesh</p>
+                            <p className='editclass-main-right-cont-l3'>10:30 AM - 11:20 AM At B2L03</p>
                         </div>
 
-                        <button>Create Class</button>
+                        <button>Save Class</button>
 
                     </div>
                 </div>
@@ -133,4 +132,4 @@ function CreateClass(){
     )
 }
 
-export default CreateClass;
+export default EditClass;
